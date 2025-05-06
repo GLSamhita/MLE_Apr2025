@@ -11,7 +11,8 @@ RUN apt-get update && \
     # Ensure Spark’s scripts run with bash instead of dash
     ln -sf /bin/bash /bin/sh && \
     # Create expected JAVA_HOME directory and symlink the java binary there
-    mkdir -p /usr/lib/jvm/java-17-openjdk-amd64/bin && \
+    mkdir -p /usr/lib/jvm/java-17-openjdk-amd64/bin 
+    #&& \
 #     ln -s "$(which java)" /usr/lib/jvm/java-17-openjdk-amd64/bin/java
 
 # # Set JAVA_HOME to the directory expected by Spark
